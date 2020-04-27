@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>jsQR Demo</title>
+  <title>QR scanner</title>
   <script src="./jsQR.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
   <style>
@@ -11,6 +11,7 @@
       max-width: 640px;
       margin: 0 auto;
       position: relative;
+      text-align: center;
     }
 
     #githubLink {
@@ -37,7 +38,7 @@
 
     #output {
       margin-top: 20px;
-      background: #eee;
+      background: white;
       padding: 10px;
       padding-bottom: 0;
     }
@@ -53,13 +54,12 @@
   </style>
 </head>
 <body>
-  <h1>jsQR Demo</h1>
-  <a id="githubLink" href="https://github.com/cozmo/jsQR">View documentation on Github</a>
-  <p>Pure JavaScript QR code decoding library.</p>
+  <h1>QR code scanner</h1>
+  <br>
   <div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
   <canvas id="canvas" hidden></canvas>
   <div id="output" hidden>
-    <div id="outputMessage">No QR code detected.</div>
+    <div id="outputMessage"></div>
     <div hidden><b>Data:</b> <span id="outputData"></span></div>
   </div>
   <script>
