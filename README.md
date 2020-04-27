@@ -1,3 +1,6 @@
+# Changes
+Made the QR link open automatically and other stylistic changes.
+
 # jsQR
 
 [![Build Status](https://travis-ci.org/cozmo/jsQR.svg?branch=master)](https://travis-ci.org/cozmo/jsQR)
